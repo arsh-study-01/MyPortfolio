@@ -1,10 +1,10 @@
 div.myInfo-container {
   position: relative;
   border-radius: 2rem;
-  padding: 4%;
-  height: 25vh;
+  padding: 3.5% 4%;
+  height: 12rem;
   overflow: hidden;
-  transition: height 0.5s ease-in;
+  transition: height 0.4s ease-in;
   background: var(--eerie-black-2);
   border: 1px solid var(--jet);
   box-shadow: var(--shadow-5);
@@ -12,18 +12,17 @@ div.myInfo-container {
   /* grid-template-rows: 20vh ; */
 }
 div.myInfo-container.showInfo {
-  height: 60vh;
+  height: 28rem;
   display: grid;
-  grid-template-rows: 18vh 25vh 4vh;
-  gap: 3%;
+  grid-template-rows: 9rem 12rem 2.5rem;
+  gap: 2%;
 }
 div.myInfo-container div.top-container {
-  padding-bottom: 2%;
   margin-bottom: 0;
   display: grid;
   gap: 3%;
   grid-template-columns: 13% auto;
-  height: 18vh;
+  height: 9rem;
 }
 div.myInfo-container.showInfo div.top-container {
   border-bottom: 1px solid var(--jet);
@@ -54,6 +53,9 @@ div.myInfo-container div.side-box button {
   height: 55%;
   border-radius: 1rem;
   cursor: pointer;
+}
+button.show-conatacts span.icon {
+  display: none;
 }
 div.myInfo-container div.side-box button:hover {
   filter: brightness(90%);
@@ -147,6 +149,9 @@ div.socal-media-icons {
   position: relative;
   top: 15%;
 }
+div.showInfo div.socal-media-icons {
+  display: flex;
+}
 div.socal-media-icons > ul {
   display: flex;
   align-items: center;
@@ -161,18 +166,16 @@ div.socal-media-icons svg {
   width: 100%;
   fill: var(--light-gray-70);
 }
-div.showInfo div.socal-media-icons {
-  display: flex;
-}
+
 /* ============================================================================= */
 div.slider-container {
   position: relative;
-  margin-top: 5vh;
+  margin-top: 3rem;
   padding: 2% 3%;
-  height: 100vh;
+  height: 50rem;
   overflow: hidden;
   border-radius: 2rem;
-  transition: height 0.5s ease-in;
+  transition: height 0.4s ease-in;
   background: var(--eerie-black-2);
   border: 1px solid var(--jet);
   box-shadow: var(--shadow-5);
@@ -212,7 +215,7 @@ div.slider-container header nav {
   top: 0;
   right: 0;
   width: 50%;
-  height: 10%;
+  height: 8%;
   display: flex;
   align-items: center;
   border-radius: 0 1.5rem;

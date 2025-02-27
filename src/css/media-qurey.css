@@ -1,0 +1,127 @@
+@media screen and (max-width: 600px) {
+  body {
+    padding: 10% 5%;
+  }
+  /* ============================================= */
+  div.myInfo-container {
+    height: 7.5rem;
+  }
+  div.myInfo-container.showInfo {
+    grid-template-rows: 7rem 13rem 1.5rem;
+    gap: 2.7%;
+  }
+  div.myInfo-container div.top-container {
+    height: 7rem;
+    width: 96%;
+    padding-bottom: 6%;
+    gap: 5%;
+    grid-template-columns: 25% 70%;
+  }
+  div.myInfo-container.showInfo div.top-container {
+    padding-bottom: 6%;
+  }
+  div.top-container > div.side-box {
+    grid-template-rows: 35% auto;
+  }
+  div.top-container > div.side-box h1 {
+    font-size: 1.5rem;
+  }
+  div.myInfo-container div.side-box button {
+    width: 60%;
+    height: 60%;
+  }
+  button.show-conatacts {
+    width: 15%;
+    height: 1rem;
+    padding: 0;
+  }
+  button.show-conatacts span.text {
+    display: none;
+  }
+  button.show-conatacts span.icon {
+    display: inline;
+  }
+  button.show-conatacts span.icon svg {
+    fill: var(--orange-yellow-crayola);
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    top: -25%;
+    right: 5%;
+  }
+
+  /* =============================== */
+  div.myInfo-container.showInfo {
+    height: 25rem;
+  }
+  /* ==================================================================================== */
+  div.myInfo-container div.information {
+    grid-template-columns: auto;
+    padding-bottom: 5%;
+  }
+  a.information-box {
+    grid-template-columns: 15% 80%;
+    gap: 3%;
+  }
+  a.information-box div.icons-box {
+    margin: 8%;
+  }
+  a.information-box > div.side-box span {
+    font-size: 0.9rem;
+  }
+  a.information-box div.icons-box svg {
+    width: 50%;
+  }
+  /* ======================================================================== */
+  div.socal-media-icons > ul {
+    width: 45%;
+  }
+  /* ======================================================================== */
+  div.slider-container header nav {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    right: 5%;
+    width: 90%;
+    height: 5%;
+    background: hsla(240, 1%, 17%, 0.75);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--jet);
+    border-radius: 12px 12px 0 0;
+    box-shadow: var(--shadow-2);
+    z-index: 5;
+  }
+  /* ======================================================================== */
+  div.slider-container {
+    gap: 3%;
+    height: 60rem;
+  }
+  header div.title {
+    width: 100%;
+  }
+  header div.title h1 {
+    width: 100%;
+  }
+  header div.title span {
+    width: 15%;
+  }
+  main div.subTitle {
+    height: 100%;
+    display: grid;
+    gap: 1%;
+  }
+  main div.subTitle p {
+    font-size: 1rem;
+  }
+  /* ============== */
+  main div.devlopent-stream {
+    display: grid;
+    gap: 0;
+  }
+  /* ============= */
+  main div.devlopent-stream > div.box {
+    grid-template-columns: auto;
+  }
+}
+@media screen and (min-width: 900px) {
+}
