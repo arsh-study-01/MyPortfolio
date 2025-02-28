@@ -21,27 +21,13 @@ Nav_Btns_Box.addEventListener("click", (e) => {
     document
       .querySelector(`main#${e.target.getAttribute("id")}`)
       .classList.add("show");
+    switch (e.target.getAttribute("id")) {
+      case "resume":
+        document.querySelector(".slider-container").classList.add("resume");
+        break;
 
-    // switch (e.target.getAttribute("id")) {
-    //   case "about":
-    //     document.querySelector("#title").innerHTML = "About me <span></span>";
-    //     document.querySelector(`#${e.target.getAttribute("id")}`);
-    //     break;
-
-    //   case "resume":
-    //     document.querySelector("#title").innerHTML = "Resume <span></span>";
-    //     break;
-
-    //   case "projects":
-    //     document.querySelector("#title").innerHTML = "Projects <span></span>";
-    //     break;
-
-    //   case "contacts":
-    //     document.querySelector("#title").innerHTML = "Contacts <span></span>";
-    //     break;
-
-    //   default:
-    //     break;
-    // }
+      default:
+        break;
+    }
   }
 });
