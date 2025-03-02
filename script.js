@@ -9,7 +9,6 @@ function myInfoShow() {
       "Show Contacts";
 }
 let Nav_Btns_Box = document.querySelector("nav>ul");
-console.log(Nav_Btns_Box);
 Nav_Btns_Box.addEventListener("click", (e) => {
   if (e.target.localName == "button") {
     document.querySelector(".active").classList.remove("active");
@@ -21,13 +20,8 @@ Nav_Btns_Box.addEventListener("click", (e) => {
     document
       .querySelector(`main#${e.target.getAttribute("id")}`)
       .classList.add("show");
-    switch (e.target.getAttribute("id")) {
-      case "resume":
-        document.querySelector(".slider-container").classList.add("resume");
-        break;
-
-      default:
-        break;
-    }
+    document
+      .querySelector(".slider-container")
+      .setAttribute("id", e.target.getAttribute("id"));
   }
 });

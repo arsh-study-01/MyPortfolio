@@ -5,6 +5,9 @@
   main {
     margin: 0;
   }
+  header div.title h1 {
+    font-size: 1.4rem;
+  }
   /* ============================================= */
   div.myInfo-container {
     height: 7.5rem;
@@ -136,6 +139,52 @@
   /* ====================================================== */
   div.skill ul {
     grid-template-columns: repeat(10, 40%);
+  }
+  /* ===================================================================== */
+  /* ===================================================================== */
+  /* ===================================================================== */
+  div.slider-container.resume {
+    height: 37rem;
+  }
+  main.show#resume {
+    grid-template-rows: auto;
+  }
+  div.education-container div.hadding {
+    grid-template-columns: 10% 80%;
+  }
+  div.education-container div.hadding h1 {
+    font-size: 1.4rem;
+  }
+  div.education-container div.hadding div.icon {
+    margin: 0;
+  }
+  div.education-container div.hadding div.icon svg {
+    width: 50%;
+  }
+  main div.education-info ul {
+    margin-left: 10%;
+  }
+  main div.education-info ul li {
+    padding: 4%;
+  }
+  main div.education-info ul li::after {
+    left: -6.5%;
+    width: 3%;
+  }
+  main div.education-info ul li:first-child:before {
+    width: 3px;
+    top: -38%;
+  }
+  main div.education-info ul li div.box h3 {
+    font-size: 1rem;
+  }
+  main div.education-info ul li div.box span {
+    font-size: 0.8rem;
+  }
+  button.resume-downlodeBtn {
+    width: 40%;
+    font-size: 0.9rem;
+    padding: 3%;
   }
 }
 @media screen and (min-width: 900px) {
