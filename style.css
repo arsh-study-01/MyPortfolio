@@ -555,7 +555,7 @@ div.project-box div.info span {
 div.div.slider-container#contacts {
   width: 65rem;
 }
-div.div.slider-container#contacts main#contacts {
+div.slider-container#contacts main#contacts {
   display: grid;
   grid-template-rows: 45% 53%;
   gap: 2%;
@@ -565,6 +565,10 @@ div.map {
   height: 100%;
   border: 1px solid var(--jet);
   border-radius: 1rem;
+}
+div.map form {
+  width: 100%;
+  height: 100%;
 }
 form {
   width: 100%;
