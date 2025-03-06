@@ -23,6 +23,8 @@ div.myInfo-container div.top-container {
   gap: 3%;
   grid-template-columns: 13% auto;
   height: 9rem;
+  padding: 0;
+  transition: height 0.4s ease-in;
 }
 div.myInfo-container.showInfo div.top-container {
   border-bottom: 1px solid var(--jet);
@@ -47,6 +49,7 @@ div.top-container > div.side-box {
   align-items: center;
   grid-template-rows: 30% auto;
   height: 100%;
+  transition: height 0.4s ease-in;
 }
 div.myInfo-container div.side-box button {
   width: 20%;
@@ -310,6 +313,7 @@ div.skill {
   width: 100%;
 }
 div.skill div.slider {
+  height: 90%;
   overflow: scroll hidden;
   scrollbar-color: red;
   scroll-padding-inline: 100px;
@@ -327,7 +331,6 @@ div.skill ul {
 }
 div.skill ul li {
   width: 100%;
-  border: 1px solid var(--jet);
   background-color: var(--bg-gradient-onyx);
   border-radius: 1.5rem;
   display: flex;
@@ -337,9 +340,12 @@ div.skill ul li {
   align-items: center;
   color: var(--light-gray-70);
 }
-div.skill ul img {
-  aspect-ratio: 1/1;
-  width: 40%;
+div.skill ul svg {
+  width: 60%;
+  height: 40%;
+}
+div.skill ul li span {
+  font-size: 0.8rem;
 }
 /* =========================================================================================================== */
 /* =========================================================================================================== */
@@ -378,7 +384,7 @@ div.education-container div.hadding div.icon {
   z-index: 5;
 }
 div.education-container div.hadding div.icon svg {
-  width: 60%;
+  width: 75%;
   fill: var(--orange-yellow-crayola);
 }
 
@@ -566,7 +572,7 @@ div.map {
   border: 1px solid var(--jet);
   border-radius: 1rem;
 }
-div.map form {
+div.map iframe {
   width: 100%;
   height: 100%;
 }
@@ -588,7 +594,9 @@ form div.first {
 form label {
   width: 100%;
 }
-form label input {
+form label input,
+form label textarea {
+  color: var(--white-2);
   height: 4rem;
   padding: 1rem;
   border-radius: 1rem;
@@ -598,8 +606,9 @@ form label input {
   border: 1px solid var(--jet);
   transform: all 0.4s;
 }
-form label input::placeholder {
-  color: var(--light-gray);
+form label input::placeholder,
+form label textarea::placeholder {
+  color: var(--light-gray-70);
 }
 form label input:focus {
   border: none;
