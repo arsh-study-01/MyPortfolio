@@ -87,6 +87,9 @@
   a.information-box div.icons-box svg {
     width: 50%;
   }
+  div.socal-media-icons svg {
+    width: 85%;
+  }
   /* ======================================================================== */
   div.socal-media-icons > ul {
     width: 45%;
@@ -182,23 +185,26 @@
   /* ===================================================================== */
   /* ===================================================================== */
   /* ===================================================================== */
-  div.slider-container.resume {
-    height: 37rem;
+  div.slider-container#resume {
+    height: 39.5rem;
+    grid-template-rows: 9% auto;
   }
   main.show#resume {
     grid-template-rows: auto;
   }
   div.education-container div.hadding {
-    grid-template-columns: 10% 80%;
+    grid-template-columns: 13% 80%;
+    gap: 2%;
   }
   div.education-container div.hadding h1 {
     font-size: 1.4rem;
   }
   div.education-container div.hadding div.icon {
     margin: 0;
+    border-radius: 0.9rem;
   }
   div.education-container div.hadding div.icon svg {
-    width: 50%;
+    width: 80%;
   }
   main div.education-info ul {
     margin-left: 10%;
@@ -207,12 +213,13 @@
     padding: 4%;
   }
   main div.education-info ul li::after {
-    left: -6.5%;
-    width: 3%;
+    left: -5.5%;
+    width: 4%;
   }
   main div.education-info ul li:first-child:before {
     width: 3px;
     top: -38%;
+    left: -4.5%;
   }
   main div.education-info ul li div.box h3 {
     font-size: 1rem;
@@ -229,13 +236,13 @@
   /* ===================================================================== */
   /* ===================================================================== */
   div.slider-container#projects {
-    height: 204rem;
-    grid-template-rows: 2% auto;
+    height: 113rem;
+    grid-template-rows: 3% auto;
     gap: 0.5%;
   }
   div.slider-container#projects main#projects {
     gap: 1%;
-    grid-template-rows: 1% 90%;
+    grid-template-rows: 3% 90%;
   }
   main#projects nav ul {
     width: 100%;
