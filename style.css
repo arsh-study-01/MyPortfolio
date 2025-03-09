@@ -503,6 +503,8 @@ div.project-container {
 }
 
 div.project-box {
+  transition: all 0.2s;
+  position: relative;
   height: 15rem;
   overflow: hidden;
   border-radius: 1.5rem;
@@ -510,6 +512,44 @@ div.project-box {
   gap: 1%;
   grid-template-rows: 68% 26%;
   cursor: pointer;
+}
+div.project-box:active {
+  transform: scale(0.99);
+}
+div.project-box::after {
+  content: "";
+  width: 2.2rem;
+  position: absolute;
+  bottom: 18.5%;
+  right: 18%;
+  color: var(--orange-yellow-crayola);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  aspect-ratio: 2 / 1;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+div.project-box#new::after {
+  content: "New";
+}
+div.project-box#working::after {
+  content: "Working";
+  width: 3.2rem;
+  bottom: 17%;
+  right: 31%;
+}
+div.project-box#soon::after {
+  content: "Coming Soon";
+  bottom: 15.3%;
+  right: 25%;
+  width: auto;
+}
+div.project-box:nth-child(4)#soon::after {
+  content: "Coming Soon";
+  width: auto;
+  right: 0;
 }
 div.project-box div.image {
   width: 100%;

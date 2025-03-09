@@ -25,3 +25,26 @@ Nav_Btns_Box.addEventListener("click", (e) => {
       .setAttribute("id", e.target.getAttribute("id"));
   }
 });
+document.querySelector(".project-nav").addEventListener("click", (e) => {
+  if (e.target.parentElement.localName == "ul") {
+    document
+      .querySelectorAll(".project-nav > ul > li")
+      .forEach((e) => e.classList.remove("active"));
+    let x = e.target;
+    x.classList.add("active");
+    categry(x.classList[0]);
+  }
+  // All Function
+  function categry(x) {
+    document.querySelectorAll(".project-box").forEach((e) => {
+      if (x != "all") {
+        e.style.display = "none";
+        if (e.getAttribute("id") == x) {
+          e.style.display = "grid";
+        }
+      } else {
+        e.style.display = "grid";
+      }
+    });
+  }
+});

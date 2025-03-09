@@ -162,7 +162,7 @@
         </ul>
       </div>
     </div>
-    <div class="slider-container" id="about">
+    <div class="slider-container" id="projects">
       <header>
         <div class="title">
           <h1 id="title">About<span></span></h1>
@@ -185,7 +185,7 @@
           </ul>
         </nav>
       </header>
-      <main id="about" class="show">
+      <main id="about">
         <div class="subTitle">
           <p>
             I'm a MERN stack developer with a strong foundation in building
@@ -557,7 +557,10 @@
               </li>
             </ul>
           </div>
-          <button class="resume-downlodeBtn">
+          <button
+            class="resume-downlodeBtn"
+            onclick="window.open('./src/img/my-avatar.png')"
+          >
             <svg
               viewBox="-0.5 0 25 25"
               fill="none"
@@ -617,17 +620,17 @@
           </button>
         </div>
       </main>
-      <main id="projects">
+      <main id="projects" class="show">
         <nav class="project-nav">
           <ul>
-            <li class="active">All</li>
-            <li>Application</li>
-            <li>Web Development</li>
-            <li>UI/UX</li>
+            <li class="all active">All</li>
+            <li class="new">New</li>
+            <li class="working">Working</li>
+            <li class="soon">Coming Soon</li>
           </ul>
         </nav>
         <div class="project-container">
-          <div class="project-box">
+          <div class="project-box" id="new">
             <div class="image">
               <img src="./src/img/projectImage/imdb.png" alt="" />
               <div class="icon">
@@ -649,7 +652,7 @@
               <span class="subTitle">Web Page</span>
             </div>
           </div>
-          <div class="project-box">
+          <div class="project-box" id="working">
             <div class="image">
               <img src="./src/img/projectImage/weather.png" alt="" />
               <div class="icon">
@@ -671,7 +674,7 @@
               <span class="subTitle">Application</span>
             </div>
           </div>
-          <div class="project-box">
+          <div class="project-box" id="working">
             <div class="image">
               <img src="./src/img/projectImage/swiggy.png" alt="" />
               <div class="icon">
@@ -693,7 +696,7 @@
               <span class="subTitle">Clone Website</span>
             </div>
           </div>
-          <div class="project-box">
+          <div class="project-box" id="soon">
             <div class="image">
               <img src="./src/img/projectImage/login.png" alt="" />
               <div class="icon">
@@ -715,7 +718,7 @@
               <span class="subTitle">Functionality Page</span>
             </div>
           </div>
-          <div class="project-box">
+          <div class="project-box" id="soon">
             <div class="image">
               <img src="./src/img/projectImage/e-commer.png" alt="" />
               <div class="icon">

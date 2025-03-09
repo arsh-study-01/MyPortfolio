@@ -140,5 +140,5 @@ main {
   display: none;
 }
 main.show {
-  display: grid;
+  display: grid !important;
 }
